@@ -15,7 +15,16 @@ class Form1(QDialog):
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
 
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        self.repaint()
+
     def paintEvent(self, event):
         super().paintEvent(event)
+        width = self.width()
+        height = self.height()
         g = QPainter(self)
+        g.setPen(QColor("Red"))
+        g.setBrush(QColor("Yellow"))
+        g.drawEllipse(0, 0, width, height)
         g.end()
