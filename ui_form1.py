@@ -1,3 +1,5 @@
+# --coding:utf-8--
+
 # Form implementation generated from reading ui file 'form1.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
