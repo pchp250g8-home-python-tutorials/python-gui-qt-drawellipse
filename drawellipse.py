@@ -1,3 +1,5 @@
+# --coding:utf-8--
+
 import sys
 from PySide6.QtWidgets import QApplication
 from form1 import Form1
